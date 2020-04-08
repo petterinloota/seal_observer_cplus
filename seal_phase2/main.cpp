@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "SealCenter.hpp"
 #include "SealWebDisplay.hpp"
 #include "DisplayInterface.hpp"
@@ -8,6 +9,7 @@ int main () {
     
     SealCenter sealCenter;
     SealWebDisplay sealWebDisplay;
+    
     sealCenter.RegisterDisplay((DisplayInterface*) &sealWebDisplay);    
     
     std::cout << "=== Seal Center Operative == PHASE 2 === \n\n";

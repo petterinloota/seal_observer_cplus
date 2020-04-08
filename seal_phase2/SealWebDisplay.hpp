@@ -1,10 +1,9 @@
 #pragma once
 #include "DisplayGeneric.hpp"
+#include <string>
 
 class SealWebDisplay : public DisplayGeneric
 {
-    int last_count = 0;
-    
 public:
     SealWebDisplay();
     ~SealWebDisplay();

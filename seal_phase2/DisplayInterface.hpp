@@ -1,11 +1,9 @@
 #pragma once
+#include <string>
 
 class DisplayInterface
 {
 public:
-    DisplayInterface();
-    ~DisplayInterface();
-
-    virtual void Update(int nr); // =0 is necessary if a pure virtual function ... no local implementation
+    virtual void Update(int nr); // =0 is necessary if a pure virtual function ... no local implementation   
 };
 
