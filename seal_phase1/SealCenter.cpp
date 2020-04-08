@@ -13,7 +13,7 @@ void SealCenter::SetState(int count)
 {
     this->cur_count = count;
     
-    sealWebDisplay.update(count);
+    sealWebDisplay.Update(count);
 }
 
 void SealCenter::RegisterDisplay(SealWebDisplay display)

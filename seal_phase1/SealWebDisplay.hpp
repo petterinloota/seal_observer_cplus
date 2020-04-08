@@ -8,6 +8,6 @@ public:
     SealWebDisplay();
     ~SealWebDisplay();
 
-    void update(int nr);
+    void Update(int nr);
 };
 
