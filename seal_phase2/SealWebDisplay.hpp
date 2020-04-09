@@ -1,5 +1,6 @@
 #pragma once
 #include "DisplayGeneric.hpp"
+#include "DisplayInterface.hpp"
 #include <string>
 
 class SealWebDisplay : public DisplayGeneric
