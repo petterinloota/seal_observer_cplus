@@ -6,9 +6,11 @@ int main () {
     int currentSealCount = 7;
     
     SealCenter sealCenter;
-    SealWebDisplay sealWebDisplay(2);
+    SealWebDisplay sealWebDisplay1(6886);
+    SealWebDisplay sealWebDisplay2(8767);
     
-    sealCenter.RegisterDisplay(&sealWebDisplay);    
+    sealCenter.RegisterDisplay(&sealWebDisplay1);    
+    sealCenter.RegisterDisplay(&sealWebDisplay2);    
     
     std::cout << "=== Seal Center Operative == PHASE 3 === \n\n";
     

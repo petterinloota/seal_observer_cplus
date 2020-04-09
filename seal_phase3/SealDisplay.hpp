@@ -9,7 +9,6 @@ public:
     SealDisplay(int id);
     ~SealDisplay();
     
-     virtual void Update(int nr) = 0;
-
+    virtual void Update(int nr) = 0;
 };
 

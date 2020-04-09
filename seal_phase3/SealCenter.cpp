@@ -1,5 +1,4 @@
 #include "SealCenter.hpp"
-#include "SealWebDisplay.hpp"
 #include "SealDisplay.hpp"
 
 SealCenter::SealCenter()
@@ -10,18 +9,21 @@ SealCenter::~SealCenter()
 {
 }
 
-void SealCenter::SetState(int count)
-{
-    this->cur_count = count;
-    
-    sealDisplay->Update(count);
-    // sealWebDisplay->Update(count);
+void SealCenter::NotifyDisplays() {
+     for (SealDisplay *display : displays_vector) { // notify all observers
+        display->Update(cur_count);
+    }
 }
 
-// void SealCenter::RegisterDisplay(SealWebDisplay display)
+void SealCenter::SetState(int count)
+{
+    this->cur_count = count;    
+    NotifyDisplays();
+}
+
 void SealCenter::RegisterDisplay(SealDisplay *display)
 {
     this->sealDisplay = display;
-    // this->sealWebDisplay = display;
+    displays_vector.push_back(display);
 }
 
