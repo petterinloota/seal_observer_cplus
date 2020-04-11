@@ -3,8 +3,8 @@
 class Observer
 {
 public:
-    Observer();
-    ~Observer();
+    Observer() {};
+    ~Observer() {};
 
     virtual void UpdateB(int nr) = 0;
 };

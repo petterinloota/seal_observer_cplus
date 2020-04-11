@@ -23,7 +23,7 @@ void SealCenter::SetState(int count)
 
 void SealCenter::RegisterDisplay(SealDisplay *display)
 {
-    this->sealDisplay = display;
+    //this->sealDisplay = display;
     displays_vector.push_back(display);
 }
 

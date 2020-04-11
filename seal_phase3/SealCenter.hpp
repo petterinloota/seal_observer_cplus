@@ -7,19 +7,16 @@ class SealCenter
 {
     int cur_count = 0;
     
-    SealDisplay *sealDisplay;
     std::vector<SealDisplay *> displays_vector;
     
 protected:
     void NotifyDisplays();
   
 public:
+    void RegisterDisplay(SealDisplay *display);
+    void SetState(int cur_count);
     SealCenter();
     ~SealCenter();
-    
-    void SetState(int cur_count);
-    
-    void RegisterDisplay(SealDisplay *display);
 };
 
 

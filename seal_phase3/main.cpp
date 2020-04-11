@@ -3,7 +3,7 @@
 #include "SealWebDisplay.hpp"
  
 int main () {
-    int currentSealCount = 7;
+    int currentSealCount = 410;
     
     SealCenter sealCenter;
     SealWebDisplay sealWebDisplay1(6886);
