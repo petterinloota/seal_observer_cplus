@@ -29,7 +29,7 @@ Observer pattern roles identified:
 * SealCenter (main application)
 * SealWebDisplay
 
-Phase 2 - Another Display added
+Phase 3 - Another Display added
 ================================
 
 * Seal Mobile App Display
@@ -44,11 +44,11 @@ Phase 2 - Another Display added
 * SealMobileDisplay (implements SealDisplay)
 
 
-Phase 3 - Statistics Database
-================================
+Phase 4 - WWF Reporter. Observer is born 
+========================================
 
 * More Observers
-  * Database storage
+  * WWF Reporter 
   
 ## Implementation changes
 
@@ -62,10 +62,10 @@ At the same time we can purge the display interface a bit.
 * SealCenter (main application)
 * SealWebDisplay (implements SealDisplay and Observer)
 * SealMobileDisplay (implements SealDisplay and Observer)
-* SealDatabase (implements Observer)
+* WWFReporter (implements Observer)
 
-Phase 4 - Data content enrichment
-=================================
+Phase 5 - Subject interface. Data content enrichment
+====================================================
 
 * More data for the Seal Center
   * Discrete counts of adult and up seals
@@ -81,8 +81,10 @@ At the same time we can purge the display interface a bit.
 * Observer (with class types)
 * Subject (with class types)
 ### Classes
-* SealData (DTO class for storing the seal strain data details)
 * SealCenter (main application)
+* SealStateData (DTO class for storing the seal strain data details)
 * SealWebDisplay (implements SealDisplay and Observer)
 * SealMobileDisplay (implements SealDisplay and Observer)
-* SealDatabase (implements Observer)
+* WWFReporter (implements Observer)
+
+
